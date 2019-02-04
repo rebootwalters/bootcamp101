@@ -1,4 +1,4 @@
 FIRSTNAME           LASTLAST           EMAIL                                        PHONE                   ONSHORE PC ID       DATE
 Giancarlo           Rhodes             giancarlo.rhodes@onshoreoutsourcing.com     (C)573-315-4226        OTSMA-LAPTOP-311      2/4/2019
-
+Chelsie             Potter             cpot84@gmail.com                            (C)573-228-1189        OTSMA-LAPTOP-229      2/4/2019
 
