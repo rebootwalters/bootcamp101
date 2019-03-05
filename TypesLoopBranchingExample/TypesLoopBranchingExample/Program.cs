@@ -28,6 +28,10 @@ namespace TypesLoopBranchingExample
                 Console.WriteLine("Convert to what type: int, double, char, boolean?");
                 string converttype = Console.ReadLine();
 
+
+
+
+
                 // example of branching
                 if (typestring == "int")
                 {
