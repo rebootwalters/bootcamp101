@@ -30,7 +30,35 @@
             o.Gender = "FEMALE";
             o.Name = "Cathy";
 
-            Console.WriteLine("Age is {0}, Gender is {1}, Name is {2}", o.Age, o.Gender, o.Name);
+            //Console.WriteLine("Age is {0}, Gender is {1}, Name is {2}", o.Age, o.Gender, o.Name);
+
+            // create  a new Car object
+            Car _newCar = new Car();
+            _newCar.CarOwner = o;
+            _newCar.Color = "Red";
+            _newCar.Make = "Toyota";
+            _newCar.Model = "Camry";
+            _newCar.Year = 2018;
+
+            Console.WriteLine("Owner is {0} and they own a {1} {2} {3}", _newCar.CarOwner.Name, _newCar.Year, 
+                _newCar.Make, _newCar.Model);
+
+
+            // ParkingLot _lot = new ParkingLot();
+            ParkingLot _lot = new ParkingLot("my lot");
+            _lot.ListOfCars.Add(_newCar);
+            _lot.ListOfCars.Add(new Car { Color = "Blue", CarOwner = o });
+            _lot.ListOfCars.Add(new Car { Color = "Yellow", CarOwner = new Owner { Age = 33, Gender = "MALE", Name = "Tom" } });
+
+            int counter = 1;
+            foreach (Car item in _lot.ListOfCars)
+            {
+                Console.WriteLine("Car color is {0} and it is {1} in the list", item.Color, counter);
+                // counter = counter + 1;
+                counter++;
+            }
+
+
             Console.ReadLine();
         }
 

@@ -18,6 +18,7 @@ namespace TypesLoopBranchingExample
     /// </summary>
     public class Owner
     {
+        public Owner() { }
 
         public int Age { get; set; }
         public string Name { get; set; }
