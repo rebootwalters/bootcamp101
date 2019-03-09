@@ -43,13 +43,15 @@
             Console.WriteLine("Owner is {0} and they own a {1} {2} {3}", _newCar.CarOwner.Name, _newCar.Year, 
                 _newCar.Make, _newCar.Model);
 
-
             // ParkingLot _lot = new ParkingLot();
             ParkingLot _lot = new ParkingLot("my lot");
-            _lot.ListOfCars.Add(_newCar);
-            _lot.ListOfCars.Add(new Car { Color = "Blue", CarOwner = o });
-            _lot.ListOfCars.Add(new Car { Color = "Yellow", CarOwner = new Owner { Age = 33, Gender = "MALE", Name = "Tom" } });
 
+            // calling a method
+            _lot.EnteringLot(_newCar);
+            _lot.EnteringLot(new Car { Color = "Blue", CarOwner = o });
+            _lot.EnteringLot(new Car { Color = "Yellow", CarOwner = new Owner { Age = 33, Gender = "MALE", Name = "Tom" } });
+
+            /*
             int counter = 1;
             foreach (Car item in _lot.ListOfCars)
             {
@@ -57,7 +59,19 @@
                 // counter = counter + 1;
                 counter++;
             }
+            */
 
+            _lot.ExitingLot(_newCar);
+            Boolean _checklot = _lot.IsLotFull();
+
+            if (_checklot == true)
+            {
+                Console.WriteLine("It's Full !!!");
+            }
+            else {
+
+                Console.WriteLine("It's not full !!!");
+            }
 
             Console.ReadLine();
         }

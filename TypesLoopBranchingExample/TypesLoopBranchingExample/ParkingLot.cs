@@ -27,6 +27,7 @@
         // empty constructor
         public ParkingLot() {
             ListOfCars = new List<Car>();
+            this.LotMaxCarLimit = 100;
         }
 
         // constructor passing in the Location of the lot
@@ -34,7 +35,41 @@
             Location = _location;
             // create list of car object
             ListOfCars = new List<Car>();
+            this.LotMaxCarLimit = 100;
         }
 
-    }
-}
+        // add car
+        public void EnteringLot(Car c) {
+
+            // code here
+            this.ListOfCars.Add(c);
+        }
+
+        // remove car
+        public void ExitingLot(Car c) {
+
+            // code here
+            this.ListOfCars.Remove(c);
+
+        }
+
+
+        public Boolean IsLotFull() {
+
+            // how many cars are currently in the lot
+            if (this.ListOfCars.Count >= LotMaxCarLimit)
+            {
+                return true;
+            }
+            else {
+
+                return false;
+            }
+
+
+         
+        }
+
+
+    }  // class closing bracket
+}  // namespacing closing bracket
