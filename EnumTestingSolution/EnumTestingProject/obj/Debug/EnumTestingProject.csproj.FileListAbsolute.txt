@@ -1,0 +1,7 @@
+C:\Users\bwalters\source\repos\EnumTestingSolution\EnumTestingProject\bin\Debug\EnumTestingProject.exe.config
+C:\Users\bwalters\source\repos\EnumTestingSolution\EnumTestingProject\bin\Debug\EnumTestingProject.exe
+C:\Users\bwalters\source\repos\EnumTestingSolution\EnumTestingProject\bin\Debug\EnumTestingProject.pdb
+C:\Users\bwalters\source\repos\EnumTestingSolution\EnumTestingProject\obj\Debug\EnumTestingProject.csprojAssemblyReference.cache
+C:\Users\bwalters\source\repos\EnumTestingSolution\EnumTestingProject\obj\Debug\EnumTestingProject.csproj.CoreCompileInputs.cache
+C:\Users\bwalters\source\repos\EnumTestingSolution\EnumTestingProject\obj\Debug\EnumTestingProject.exe
+C:\Users\bwalters\source\repos\EnumTestingSolution\EnumTestingProject\obj\Debug\EnumTestingProject.pdb
